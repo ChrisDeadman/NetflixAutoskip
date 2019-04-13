@@ -1,0 +1,72 @@
+body {
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  width: 200px;
+}
+
+html:not([dir="rtl"]) header h1 {
+  padding-left: 50px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-position: left center;
+}
+
+header h1 {
+  color: black;
+  background-image: url(icon48.png);
+  background-repeat: no-repeat;
+  font-size: 1.5em;
+  flex-grow: 1;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+label {
+  font-size: 1em;
+}
+
+input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.4em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
