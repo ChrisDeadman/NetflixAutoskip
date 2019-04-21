@@ -4,7 +4,7 @@ Netflix Autoskip 1.0
 
 Author: ChrisDeadman
 
-auto-clicks skip buttons
+google chrome extension, auto-clicks skip button
 
 ![Preview](preview.png)
 
